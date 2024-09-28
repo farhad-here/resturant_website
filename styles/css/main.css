@@ -1,0 +1,2075 @@
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.681)), url(../../assets/image/bg.jpeg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about-us {
+  height: 90vh;
+  background-color: #262626;
+}
+
+footer {
+  height: fit-content;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .navicon {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    background-color: gold;
+  }
+  .navicon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  nav {
+    position: relative;
+    z-index: 200;
+  }
+  nav .navbar-nav .nav-right {
+    width: 50vw;
+    height: 100vh;
+    background-color: #262626;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  nav .navbar-nav .nav-right ul {
+    margin-top: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right ul a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    transition: all 1s;
+  }
+  nav .navbar-nav .nav-right ul a:hover {
+    color: #d3ab55;
+    letter-spacing: 5px;
+  }
+  nav .navbar-nav .nav-right .nav-frame {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right .nav-frame img {
+    width: 120px;
+    height: 120px;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(1) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(3) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animationimagefirst {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(2) {
+    animation-direction: normal;
+    transition: all 1s;
+    animation: animationimagesecond 7s linear infinite;
+  }
+  @keyframes animationimagesecond {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .navicon {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    background-color: gold;
+  }
+  .navicon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  nav {
+    position: relative;
+    z-index: 200;
+  }
+  nav .navbar-nav .nav-right {
+    width: 50vw;
+    height: 100vh;
+    background-color: #262626;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  nav .navbar-nav .nav-right ul {
+    margin-top: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right ul a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    transition: all 1s;
+  }
+  nav .navbar-nav .nav-right ul a:hover {
+    color: #d3ab55;
+    letter-spacing: 5px;
+  }
+  nav .navbar-nav .nav-right .nav-frame {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right .nav-frame img {
+    width: 120px;
+    height: 120px;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(1) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(3) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animationimagefirst {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(2) {
+    animation-direction: normal;
+    transition: all 1s;
+    animation: animationimagesecond 7s linear infinite;
+  }
+  @keyframes animationimagesecond {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navicon {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    background-color: gold;
+  }
+  .navicon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  nav {
+    position: relative;
+    z-index: 200;
+  }
+  nav .navbar-nav .nav-right {
+    width: 50vw;
+    height: 100vh;
+    background-color: #262626;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  nav .navbar-nav .nav-right ul {
+    margin-top: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right ul a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    transition: all 1s;
+  }
+  nav .navbar-nav .nav-right ul a:hover {
+    color: #d3ab55;
+    letter-spacing: 5px;
+  }
+  nav .navbar-nav .nav-right .nav-frame {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right .nav-frame img {
+    width: 120px;
+    height: 120px;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(1) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(3) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animationimagefirst {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(2) {
+    animation-direction: normal;
+    transition: all 1s;
+    animation: animationimagesecond 7s linear infinite;
+  }
+  @keyframes animationimagesecond {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .navicon {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    background-color: gold;
+  }
+  .navicon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  nav {
+    position: relative;
+    z-index: 200;
+  }
+  nav .navbar-nav .nav-right {
+    width: 50vw;
+    height: 100vh;
+    background-color: #262626;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  nav .navbar-nav .nav-right ul {
+    margin-top: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right ul a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    transition: all 1s;
+  }
+  nav .navbar-nav .nav-right ul a:hover {
+    color: #d3ab55;
+    letter-spacing: 5px;
+  }
+  nav .navbar-nav .nav-right .nav-frame {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right .nav-frame img {
+    width: 120px;
+    height: 120px;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(1) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(3) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animationimagefirst {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(2) {
+    animation-direction: normal;
+    transition: all 1s;
+    animation: animationimagesecond 7s linear infinite;
+  }
+  @keyframes animationimagesecond {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+@media screen and (min-width: 1201px) {
+  .navicon {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    background-color: gold;
+  }
+  .navicon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  nav {
+    position: relative;
+    z-index: 200;
+  }
+  nav .navbar-nav .nav-right {
+    width: 50vw;
+    height: 100vh;
+    background-color: #262626;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  nav .navbar-nav .nav-right ul {
+    margin-top: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right ul a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    transition: all 1s;
+  }
+  nav .navbar-nav .nav-right ul a:hover {
+    color: #d3ab55;
+    letter-spacing: 5px;
+  }
+  nav .navbar-nav .nav-right .nav-frame {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav .navbar-nav .nav-right .nav-frame img {
+    width: 120px;
+    height: 120px;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(1) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(3) {
+    transition: all 1s;
+    transition: all 1s;
+    animation: animationimagefirst 2s linear infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animationimagefirst {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+  }
+  nav .navbar-nav .nav-right .nav-frame img:nth-child(2) {
+    animation-direction: normal;
+    transition: all 1s;
+    animation: animationimagesecond 7s linear infinite;
+  }
+  @keyframes animationimagesecond {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  header .brand {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo-brand {
+    width: 100px;
+    height: 100px;
+  }
+  header .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+  }
+  header .logo-brand .logo i {
+    font-size: 3rem;
+  }
+  header h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+  }
+  header p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+  }
+  header .welcome-header {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+  }
+  header .welcome-header p:first-child {
+    font-size: 50px;
+    font-family: "Dancing Script";
+    font-weight: 600;
+    color: #d3ab55;
+  }
+  header .welcome-header p:nth-child(2) {
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  header .welcome-header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 175px;
+    height: 45px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 4px;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .welcome-header a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  header .brand {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo-brand {
+    width: 200px;
+    height: 200px;
+  }
+  header .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+  }
+  header .logo-brand .logo i {
+    font-size: 6rem;
+  }
+  header h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+  }
+  header p {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 300;
+  }
+  header .welcome-header {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+  }
+  header .welcome-header p:first-child {
+    font-size: 90px;
+    font-family: "Dancing Script";
+    font-weight: 600;
+    color: #d3ab55;
+  }
+  header .welcome-header p:nth-child(2) {
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  header .welcome-header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 175px;
+    height: 45px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 4px;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .welcome-header a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  header .brand {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo-brand {
+    width: 180px;
+    height: 180px;
+  }
+  header .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+  }
+  header .logo-brand .logo i {
+    font-size: 5rem;
+  }
+  header h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+  }
+  header p {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  header .welcome-header {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+  }
+  header .welcome-header p:first-child {
+    font-size: 6rem;
+    font-family: "Dancing Script";
+    font-weight: 600;
+    color: #d3ab55;
+  }
+  header .welcome-header p:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  header .welcome-header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 4px;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .welcome-header a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+  header .brand {
+    display: flex;
+    gap: 10rem;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  header .brand .name-brand {
+    position: relative;
+    left: 10%;
+  }
+  header .logo-brand {
+    width: 210px;
+    height: 210px;
+  }
+  header .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+  }
+  header .logo-brand .logo i {
+    font-size: 6rem;
+  }
+  header h1 {
+    font-size: 90px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+  }
+  header p {
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  header .welcome-header {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+  }
+  header .welcome-header p:first-child {
+    font-size: 6rem;
+    font-family: "Dancing Script";
+    font-weight: 600;
+    color: #d3ab55;
+  }
+  header .welcome-header p:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  header .welcome-header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 4px;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .welcome-header a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 1201px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+  header .brand {
+    display: flex;
+    gap: 9rem;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  header .logo-brand {
+    width: 260px;
+    height: 260px;
+  }
+  header .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+  }
+  header .logo-brand .logo i {
+    font-size: 7rem;
+  }
+  header h1 {
+    font-size: 90px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+  }
+  header p {
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  header .welcome-header {
+    text-align: center;
+    line-height: 7rem;
+    gap: 2rem;
+  }
+  header .welcome-header p:first-child {
+    font-size: 6rem;
+    font-family: "Dancing Script";
+    font-weight: 600;
+    color: #d3ab55;
+  }
+  header .welcome-header p:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  header .welcome-header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 4px;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .welcome-header a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about-us img {
+    width: 300px;
+    height: 300px;
+  }
+  .about-us .aboutUs-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-us .aboutUs-right .title-about p {
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    font-weight: 300;
+    color: #d3ab55;
+    margin-bottom: 10px;
+  }
+  .about-us .aboutUs-right .intro-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #d9caaa;
+    margin-bottom: 20px;
+  }
+  .about-us .aboutUs-right .info-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #bbb;
+    margin-bottom: 14px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .about-us .aboutUs-right .button-about a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 9px;
+    position: relative;
+    margin-top: 5px;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about-us .aboutUs-right .button-about a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .about-us img {
+    width: 320px;
+    height: 320px;
+  }
+  .about-us .aboutUs-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .about-us .aboutUs-right .title-about p {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    color: #d3ab55;
+    margin-bottom: 6px;
+  }
+  .about-us .aboutUs-right .intro-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #d9caaa;
+    margin-bottom: 10px;
+  }
+  .about-us .aboutUs-right .info-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #bbb;
+    margin-bottom: 14px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .about-us .aboutUs-right .button-about a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 9px;
+    position: relative;
+    margin-top: 5px;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about-us .aboutUs-right .button-about a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .about-us img {
+    width: 320px;
+    height: 320px;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animation {
+    from {
+      transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    }
+    to {
+      transform: rotateX(10deg) rotateY(10deg) rotate(10deg);
+    }
+  }
+  .about-us .aboutUs-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .about-us .aboutUs-right .title-about p {
+    font-family: "Dancing Script", cursive;
+    font-size: 90px;
+    font-weight: 600;
+    color: #d3ab55;
+    margin-bottom: 6px;
+  }
+  .about-us .aboutUs-right .intro-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #d9caaa;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .about-us .aboutUs-right .info-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #bbb;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+    padding-right: 10px;
+  }
+  .about-us .aboutUs-right .button-about a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 160px;
+    height: 45px;
+    font-size: 17px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 9px;
+    position: relative;
+    margin-top: 5px;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about-us .aboutUs-right .button-about a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .about-us img {
+    width: 350px;
+    height: 350px;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animation {
+    from {
+      transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    }
+    to {
+      transform: rotateX(10deg) rotateY(10deg) rotate(10deg);
+    }
+  }
+  .about-us .aboutUs-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .about-us .aboutUs-right .title-about p {
+    font-family: "Dancing Script", cursive;
+    font-size: 90px;
+    font-weight: 600;
+    color: #d3ab55;
+    margin-bottom: 6px;
+  }
+  .about-us .aboutUs-right .intro-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #d9caaa;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .about-us .aboutUs-right .info-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #bbb;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+    padding-right: 10px;
+  }
+  .about-us .aboutUs-right .button-about a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 160px;
+    height: 45px;
+    font-size: 17px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 9px;
+    position: relative;
+    margin-top: 5px;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about-us .aboutUs-right .button-about a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .about-us img {
+    width: 550px;
+    height: 550px;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animation {
+    from {
+      transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    }
+    to {
+      transform: rotateX(10deg) rotateY(10deg) rotate(10deg);
+    }
+  }
+  .about-us .aboutUs-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .about-us .aboutUs-right .title-about p {
+    font-family: "Dancing Script", cursive;
+    font-size: 90px;
+    font-weight: 600;
+    color: #d3ab55;
+    margin-bottom: 6px;
+  }
+  .about-us .aboutUs-right .intro-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #d9caaa;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .about-us .aboutUs-right .info-about p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.9rem;
+    font-style: italic;
+    color: #bbb;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+    width: 39rem;
+    position: relative;
+    right: 10px;
+  }
+  .about-us .aboutUs-right .button-about a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+    height: 50px;
+    font-size: 17px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    color: #d3ab55;
+    border: 2px solid #d3ab55;
+    border-radius: 9px;
+    position: relative;
+    margin-top: 5px;
+    top: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about-us .aboutUs-right .button-about a:hover {
+    background-color: #d3ab55;
+    color: #000;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .gallery {
+    height: fit-content;
+  }
+  .gallery .gallery-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #d3ab55;
+    color: #262626;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+  }
+  .gallery .card {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .gallery .card:hover .gallery-overlay {
+    left: 0;
+  }
+  .gallery .card .gallery-overlay {
+    background-color: #d9caaa;
+    opacity: 0.8;
+    position: absolute;
+    left: -100%;
+    transition: left 1s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .gallery .card .gallery-overlay p {
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .gallery .card .gallery-overlay a {
+    text-decoration: none;
+    color: #262626;
+    background-color: snow;
+    padding: 1rem;
+    border: 3px solid #d3ab55;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .gallery .card .gallery-overlay a:hover {
+    opacity: 1;
+    background-color: #bbb;
+    color: black;
+    font-weight: 500;
+  }
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .gallery {
+    height: fit-content;
+  }
+  .gallery .gallery-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #d3ab55;
+    color: #262626;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+  }
+  .gallery .card {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .gallery .card:hover .gallery-overlay {
+    left: 0;
+  }
+  .gallery .card .gallery-overlay {
+    background-color: #d9caaa;
+    opacity: 0.8;
+    position: absolute;
+    left: -100%;
+    transition: left 1s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .gallery .card .gallery-overlay p {
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .gallery .card .gallery-overlay a {
+    text-decoration: none;
+    color: #262626;
+    background-color: snow;
+    padding: 1rem;
+    border: 3px solid #d3ab55;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .gallery .card .gallery-overlay a:hover {
+    opacity: 1;
+    background-color: #bbb;
+    color: black;
+    font-weight: 500;
+  }
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .gallery {
+    height: fit-content;
+  }
+  .gallery .gallery-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #d3ab55;
+    color: #262626;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+  }
+  .gallery .gallery-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 1rem;
+    padding: 1rem;
+    background-color: #262626;
+  }
+  .gallery .card {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+  .gallery .card:hover .gallery-overlay {
+    left: 0;
+  }
+  .gallery .card .gallery-overlay {
+    background-color: #d9caaa;
+    opacity: 0.8;
+    position: absolute;
+    left: -100%;
+    transition: left 1s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .gallery .card .gallery-overlay p {
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .gallery .card .gallery-overlay a {
+    text-decoration: none;
+    color: #262626;
+    background-color: snow;
+    padding: 1rem;
+    border: 3px solid #d3ab55;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .gallery .card .gallery-overlay a:hover {
+    opacity: 1;
+    background-color: #bbb;
+    color: black;
+    font-weight: 500;
+  }
+  .gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .gallery {
+    height: fit-content;
+  }
+  .gallery .gallery-title {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background-color: #d3ab55;
+    color: #262626;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px snow;
+    font-family: "Dancing Script", cursive;
+  }
+  .gallery .gallery-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    background-color: #262626;
+    padding: 1rem;
+    gap: 10px;
+  }
+  .gallery .card {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+  }
+  .gallery .card:hover .gallery-overlay {
+    left: 0;
+  }
+  .gallery .card .gallery-overlay {
+    background-color: #d9caaa;
+    opacity: 0.8;
+    position: absolute;
+    left: -100%;
+    transition: left 1s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .gallery .card .gallery-overlay p {
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .gallery .card .gallery-overlay a {
+    text-decoration: none;
+    color: #262626;
+    background-color: snow;
+    padding: 1rem;
+    border: 3px solid #d3ab55;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .gallery .card .gallery-overlay a:hover {
+    opacity: 1;
+    background-color: #bbb;
+    color: black;
+    font-weight: 500;
+  }
+  .gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .gallery {
+    height: fit-content;
+  }
+  .gallery .gallery-title {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background-color: #d3ab55;
+    color: #262626;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px snow;
+    font-family: "Dancing Script", cursive;
+  }
+  .gallery .gallery-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    background-color: #262626;
+    padding: 1rem;
+    gap: 12px;
+  }
+  .gallery .card {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 11px;
+  }
+  .gallery .card:hover .gallery-overlay {
+    left: 0;
+  }
+  .gallery .card .gallery-overlay {
+    background-color: #d9caaa;
+    opacity: 0.8;
+    position: absolute;
+    left: -100%;
+    transition: left 1s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .gallery .card .gallery-overlay p {
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .gallery .card .gallery-overlay a {
+    text-decoration: none;
+    color: #262626;
+    background-color: snow;
+    padding: 1rem;
+    border: 3px solid #d3ab55;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .gallery .card .gallery-overlay a:hover {
+    opacity: 1;
+    background-color: #bbb;
+    color: black;
+    font-weight: 500;
+  }
+  .gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+  }
+  footer .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo-brand {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  footer .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  footer .logo-brand .logo i {
+    font-size: 17px;
+  }
+  footer h1 {
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+  footer p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+    text-align: center;
+  }
+  footer .social {
+    margin: 20px 0;
+  }
+  footer .social a {
+    text-decoration: none;
+    color: #bbb;
+    padding: 6px;
+    transition: color 1s;
+  }
+  footer .social a:hover {
+    color: #d3ab55;
+  }
+  footer .social a i {
+    font-size: 25px;
+  }
+  footer .copyright p {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+  }
+  footer .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo-brand {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  footer .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  footer .logo-brand .logo i {
+    font-size: 30px;
+  }
+  footer h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+  footer p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+    text-align: center;
+  }
+  footer .social {
+    margin: 20px 0;
+  }
+  footer .social a {
+    text-decoration: none;
+    color: #bbb;
+    padding: 6px;
+    transition: color 1s;
+  }
+  footer .social a:hover {
+    color: #d3ab55;
+  }
+  footer .social a i {
+    font-size: 35px;
+  }
+  footer .copyright p {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5a5a;
+  }
+  footer .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo-brand {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  footer .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  footer .logo-brand .logo i {
+    font-size: 30px;
+  }
+  footer h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+  footer p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+    text-align: center;
+  }
+  footer .social {
+    margin: 20px 0;
+  }
+  footer .social a {
+    text-decoration: none;
+    color: #bbb;
+    padding: 6px;
+    transition: color 1s;
+  }
+  footer .social a:hover {
+    color: #d3ab55;
+  }
+  footer .social a i {
+    font-size: 35px;
+  }
+  footer .copyright p {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5a5a;
+  }
+  footer .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo-brand {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  footer .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  footer .logo-brand .logo i {
+    font-size: 30px;
+  }
+  footer h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+  footer p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+    text-align: center;
+  }
+  footer .social {
+    margin: 20px 0;
+  }
+  footer .social a {
+    text-decoration: none;
+    color: #bbb;
+    padding: 6px;
+    transition: color 1s;
+  }
+  footer .social a:hover {
+    color: #d3ab55;
+  }
+  footer .social a i {
+    font-size: 35px;
+  }
+  footer .copyright p {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5a5a;
+  }
+  footer .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo-brand {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  footer .logo-brand .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    color: #d3ab55;
+    text-decoration: none;
+    border: 5px solid #d3ab55;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  footer .logo-brand .logo i {
+    font-size: 30px;
+  }
+  footer h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+  footer p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+    text-align: center;
+  }
+  footer .social {
+    margin: 20px 0;
+  }
+  footer .social a {
+    text-decoration: none;
+    color: #bbb;
+    padding: 6px;
+    transition: color 1s;
+  }
+  footer .social a:hover {
+    color: #d3ab55;
+  }
+  footer .social a i {
+    font-size: 35px;
+  }
+  footer .copyright p {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

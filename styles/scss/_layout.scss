@@ -1,0 +1,28 @@
+@import 'variable';
+// header
+header{
+    height: $fullscreen-height;
+    background:linear-gradient(rgba(0, 0, 0, 0.714),rgba(0, 0, 0, 0.681)), url(../../assets/image/bg.jpeg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+// about us
+.about-us{
+    height: $aboutUs-height;
+    background-color: $back-dark;
+}
+// footer
+footer{
+    height: $footer-height;
+}
+// responsive
+@mixin RSW($w,$mw){
+    @media screen and (min-width:$w) and (max-width:$mw) {
+        @content;
+    }
+}
+@mixin RSWTV($w){
+    @media screen and (min-width:$w){
+        @content;
+    }
+}

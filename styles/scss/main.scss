@@ -1,0 +1,2327 @@
+@import 'variable.scss';
+@import 'layout';
+// all
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+// navbar
+    //mobile 
+@include RSW($mobile-min,$mobile-max){
+    .navicon{
+        z-index: 1;
+        position: fixed;
+        left: 0;
+        top: 10px;
+        cursor: pointer;
+        
+        border-radius: 50%;
+        height: fit-content;
+        width: fit-content;
+        background-color: gold;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    nav{
+        position: relative;
+        z-index: 200;
+  
+        .navbar-nav{  
+                .nav-right{
+                    width: 50vw;
+                    height: 100vh;
+                    background-color:$back-dark;
+                    position: fixed;
+                    right:0;
+                    top: 0;
+                    ul{
+                        margin-top: 1rem;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        list-style: none;
+                        gap: 1rem;
+                        a{
+                            color: $color-gray-main;
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-weight: 400;
+                            font-family: "Dancing Script", cursive;
+                            text-align: center;
+                            transition: all 1s;
+                            &:hover{
+                                color: $color-gold-main;
+                                letter-spacing: 5px;
+                            }
+                        }
+                    }
+                    .nav-frame{
+                        width: 100%;
+                        height: 500px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 1rem;
+                        img{
+                            width: 120px;
+                            height: 120px;
+                            &:nth-child(1){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            &:nth-child(3){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            @keyframes animationimagefirst{
+                                from{
+                                    transform:  rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(20deg);
+                                }
+                            }
+                            &:nth-child(2){
+                                animation-direction: normal;
+                                transition: all 1s;
+                                animation: animationimagesecond 7s linear infinite;
+                            }
+
+                            @keyframes animationimagesecond{
+                                from{
+                                    transform: rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(360deg);
+
+                                }
+                                }
+                        }
+                                    
+    
+                    }
+                }
+        }
+    }
+
+
+}
+    // tablet
+@include RSW($tablets-min,$tablets-max){
+    .navicon{
+        z-index: 1;
+        position: fixed;
+        left: 0;
+        top: 10px;
+        cursor: pointer;
+        
+        border-radius: 50%;
+        height: fit-content;
+        width: fit-content;
+        background-color: gold;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    nav{
+        position: relative;
+        z-index: 200;
+  
+        .navbar-nav{  
+                .nav-right{
+                    width: 50vw;
+                    height: 100vh;
+                    background-color:$back-dark;
+                    position: fixed;
+                    right:0;
+                    top: 0;
+                    ul{
+                        margin-top: 1rem;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        list-style: none;
+                        gap: 1rem;
+                        a{
+                            color: $color-gray-main;
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-weight: 400;
+                            font-family: "Dancing Script", cursive;
+                            text-align: center;
+                            transition: all 1s;
+                            &:hover{
+                                color: $color-gold-main;
+                                letter-spacing: 5px;
+                            }
+                        }
+                    }
+                    .nav-frame{
+                        width: 100%;
+                        height: 500px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 1rem;
+                        img{
+                            width: 120px;
+                            height: 120px;
+                            &:nth-child(1){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            &:nth-child(3){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            @keyframes animationimagefirst{
+                                from{
+                                    transform:  rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(20deg);
+                                }
+                            }
+                            &:nth-child(2){
+                                animation-direction: normal;
+                                transition: all 1s;
+                                animation: animationimagesecond 7s linear infinite;
+                            }
+
+                            @keyframes animationimagesecond{
+                                from{
+                                    transform: rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(360deg);
+
+                                }
+                                }
+                        }
+                                    
+    
+                    }
+                }
+        }
+    }
+
+
+}
+    // laptop
+@include RSW($laptops-min,$laptops-max){
+    .navicon{
+        z-index: 1;
+        position: fixed;
+        left: 0;
+        top: 10px;
+        cursor: pointer;
+        
+        border-radius: 50%;
+        height: fit-content;
+        width: fit-content;
+        background-color: gold;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    nav{
+        position: relative;
+        z-index: 200;
+  
+        .navbar-nav{  
+                .nav-right{
+                    width: 50vw;
+                    height: 100vh;
+                    background-color:$back-dark;
+                    position: fixed;
+                    right:0;
+                    top: 0;
+                    ul{
+                        margin-top: 1rem;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        list-style: none;
+                        gap: 1rem;
+                        a{
+                            color: $color-gray-main;
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-weight: 400;
+                            font-family: "Dancing Script", cursive;
+                            text-align: center;
+                            transition: all 1s;
+                            &:hover{
+                                color: $color-gold-main;
+                                letter-spacing: 5px;
+                            }
+                        }
+                    }
+                    .nav-frame{
+                        width: 100%;
+                        height: 500px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 1rem;
+                        img{
+                            width: 120px;
+                            height: 120px;
+                            &:nth-child(1){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            &:nth-child(3){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            @keyframes animationimagefirst{
+                                from{
+                                    transform:  rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(20deg);
+                                }
+                            }
+                            &:nth-child(2){
+                                animation-direction: normal;
+                                transition: all 1s;
+                                animation: animationimagesecond 7s linear infinite;
+                            }
+
+                            @keyframes animationimagesecond{
+                                from{
+                                    transform: rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(360deg);
+
+                                }
+                                }
+                        }
+                                    
+    
+                    }
+                }
+        }
+    }
+
+
+}
+    // desktop
+@include RSW($desktops-min,$desktops-max){
+    .navicon{
+        z-index: 1;
+        position: fixed;
+        left: 0;
+        top: 10px;
+        cursor: pointer;
+        
+        border-radius: 50%;
+        height: fit-content;
+        width: fit-content;
+        background-color: gold;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    nav{
+        position: relative;
+        z-index: 200;
+  
+        .navbar-nav{  
+                .nav-right{
+                    width: 50vw;
+                    height: 100vh;
+                    background-color:$back-dark;
+                    position: fixed;
+                    right:0;
+                    top: 0;
+                    ul{
+                        margin-top: 1rem;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        list-style: none;
+                        gap: 1rem;
+                        a{
+                            color: $color-gray-main;
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-weight: 400;
+                            font-family: "Dancing Script", cursive;
+                            text-align: center;
+                            transition: all 1s;
+                            &:hover{
+                                color: $color-gold-main;
+                                letter-spacing: 5px;
+                            }
+                        }
+                    }
+                    .nav-frame{
+                        width: 100%;
+                        height: 500px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 1rem;
+                        img{
+                            width: 120px;
+                            height: 120px;
+                            &:nth-child(1){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            &:nth-child(3){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            @keyframes animationimagefirst{
+                                from{
+                                    transform:  rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(20deg);
+                                }
+                            }
+                            &:nth-child(2){
+                                animation-direction: normal;
+                                transition: all 1s;
+                                animation: animationimagesecond 7s linear infinite;
+                            }
+
+                            @keyframes animationimagesecond{
+                                from{
+                                    transform: rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(360deg);
+
+                                }
+                                }
+                        }
+                                    
+    
+                    }
+                }
+        }
+    }
+
+
+}
+    // tv
+@include RSWTV($tv){
+    .navicon{
+        z-index: 1;
+        position: fixed;
+        left: 0;
+        top: 10px;
+        cursor: pointer;
+        
+        border-radius: 50%;
+        height: fit-content;
+        width: fit-content;
+        background-color: gold;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    nav{
+        position: relative;
+        z-index: 200;
+  
+        .navbar-nav{  
+                .nav-right{
+                    width: 50vw;
+                    height: 100vh;
+                    background-color:$back-dark;
+                    position: fixed;
+                    right:0;
+                    top: 0;
+                    ul{
+                        margin-top: 1rem;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        list-style: none;
+                        gap: 1rem;
+                        a{
+                            color: $color-gray-main;
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-weight: 400;
+                            font-family: "Dancing Script", cursive;
+                            text-align: center;
+                            transition: all 1s;
+                            &:hover{
+                                color: $color-gold-main;
+                                letter-spacing: 5px;
+                            }
+                        }
+                    }
+                    .nav-frame{
+                        width: 100%;
+                        height: 500px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 1rem;
+                        img{
+                            width: 120px;
+                            height: 120px;
+                            &:nth-child(1){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            &:nth-child(3){
+                                transition: all 1s;
+                                transition: all 1s;
+                            
+                                animation: animationimagefirst 2s linear infinite;
+                                animation-direction: alternate;
+                            
+                            }
+                            @keyframes animationimagefirst{
+                                from{
+                                    transform:  rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(20deg);
+                                }
+                            }
+                            &:nth-child(2){
+                                animation-direction: normal;
+                                transition: all 1s;
+                                animation: animationimagesecond 7s linear infinite;
+                            }
+
+                            @keyframes animationimagesecond{
+                                from{
+                                    transform: rotate(0deg);
+                    
+                                }
+                                to{
+                                    transform: rotate(360deg);
+
+                                }
+                                }
+                        }
+                                    
+    
+                    }
+                }
+        }
+    }
+
+
+}
+// header
+    // mobile
+@include RSW($mobile-min,$mobile-max){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        .brand{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+        }
+        // logo and brand section
+        .logo-brand{
+    
+            width: 100px;
+            height: 100px;
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 100%;
+                width: 100%;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                i{
+                    font-size: 3rem;
+                }
+            }
+        }
+        h1{
+            font-size: 50px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            
+        }
+        p{
+            font-size: 30px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 400;
+
+        }
+        // welcome section
+        .welcome-header{
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            // text-align: center;
+            // line-height: 3rem;
+            gap: 2rem;
+            p:first-child{
+                font-size: 50px;
+                font-family: "Dancing Script";
+                font-weight: 600;
+                color: $color-gold-main;
+            }
+            p:nth-child(2){
+                font-size: 2rem;
+                font-family: "Josefin Sans", sans-serif;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+                width: 175px;
+                height: 45px;
+                font-family: "Josefin Sans", sans-serif;
+                color:$color-gold-main;
+                border: 2px solid $color-gold-main;
+                border-radius: 4px;
+                position: relative;
+                top: 20%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                &:hover{
+                    background-color: $color-gold-main;
+                    color: $color-black-pure;
+                }
+            }
+        }
+    }
+}
+    // Tablets
+@include RSW($tablets-min,$tablets-max){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        .brand{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+        }
+        // logo and brand section
+        .logo-brand{
+    
+            width: 200px;
+            height: 200px;
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 100%;
+                width: 100%;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                i{
+                    font-size: 6rem;
+                }
+            }
+        }
+        h1{
+            font-size: 60px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 500;
+            
+        }
+        p{
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 300;
+
+        }
+        // welcome section
+        .welcome-header{
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+    
+            gap: 2rem;
+            p:first-child{
+                font-size: 90px;
+                font-family: "Dancing Script";
+                font-weight: 600;
+                color: $color-gold-main;
+            }
+            p:nth-child(2){
+                font-size: 2rem;
+                font-family: "Josefin Sans", sans-serif;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+                width: 175px;
+                height: 45px;
+                font-family: "Josefin Sans", sans-serif;
+                color:$color-gold-main;
+                border: 2px solid $color-gold-main;
+                border-radius: 4px;
+                position: relative;
+                top: 20%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                &:hover{
+                    background-color: $color-gold-main;
+                    color: $color-black-pure;
+                }
+            }
+        }
+    }
+}
+    // laptops
+@include RSW($laptops-min,$laptops-max){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        .brand{
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+        }
+        // logo and brand section
+        .logo-brand{
+    
+            width: 180px;
+            height: 180px;
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 100%;
+                width: 100%;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                i{
+                    font-size: 5rem;
+                }
+            }
+        }
+        h1{
+            font-size: 60px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            
+        }
+        p{
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 400;
+            font-family: "Josefin Sans", sans-serif;
+
+        }
+        // welcome section
+        .welcome-header{
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            // text-align: center;
+            // line-height: 3rem;
+            gap: 2rem;
+            p:first-child{
+                font-size: 6rem;
+                font-family: "Dancing Script";
+                font-weight: 600;
+                color: $color-gold-main;
+            }
+            p:nth-child(2){
+                font-size: 3rem;
+                font-weight: 400;
+                font-family: "Josefin Sans", sans-serif;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+                width: 180px;
+                height: 50px;
+                font-family: "Josefin Sans", sans-serif;
+                color:$color-gold-main;
+                border: 2px solid $color-gold-main;
+                border-radius: 4px;
+                position: relative;
+                top: 20%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                &:hover{
+                    background-color: $color-gold-main;
+                    color: $color-black-pure;
+                }
+            }
+        }
+    }
+}
+    // Desktops
+@include RSW($desktops-min,$desktops-max){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        .brand{
+            display: flex;
+            gap: 10rem;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            .name-brand{
+                position: relative;
+                left: 10%;
+            }
+        }
+        // logo and brand section
+        .logo-brand{
+    
+            width: 210px;
+            height: 210px;
+            
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 100%;
+                width: 100%;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                i{
+                    font-size: 6rem;
+                }
+            }
+        }
+        h1{
+            font-size: 90px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+
+            
+        }
+        p{
+            font-size: 50px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 400;
+            font-family: "Josefin Sans", sans-serif;
+
+        }
+        // welcome section
+        .welcome-header{
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            // text-align: center;
+            // line-height: 3rem;
+            gap: 2rem;
+            p:first-child{
+                font-size: 6rem;
+                font-family: "Dancing Script";
+                font-weight: 600;
+                color: $color-gold-main;
+            }
+            p:nth-child(2){
+                font-size: 3rem;
+                font-weight: 400;
+                font-family: "Josefin Sans", sans-serif;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+                width: 180px;
+                height: 50px;
+                font-family: "Josefin Sans", sans-serif;
+                color:$color-gold-main;
+                border: 2px solid $color-gold-main;
+                border-radius: 4px;
+                position: relative;
+                top: 20%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                &:hover{
+                    background-color: $color-gold-main;
+                    color: $color-black-pure;
+                }
+            }
+        }
+    }
+}
+    // tv
+@include RSWTV($tv){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        .brand{
+            display: flex;
+            gap: 9rem;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+    
+        }
+        // logo and brand section
+        .logo-brand{
+    
+            width: 260px;
+            height: 260px;
+            
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 100%;
+                width: 100%;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                i{
+                    font-size: 7rem;
+                }
+            }
+        }
+        h1{
+            font-size: 90px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+
+            
+        }
+        p{
+            font-size: 50px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 400;
+            font-family: "Josefin Sans", sans-serif;
+
+        }
+        // welcome section
+        .welcome-header{
+            // height: fit-content;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-content: center;
+            text-align: center;
+            line-height: 7rem;
+            gap: 2rem;
+            p:first-child{
+                font-size: 6rem;
+                font-family: "Dancing Script";
+                font-weight: 600;
+                color: $color-gold-main;
+            }
+            p:nth-child(2){
+                font-size: 3rem;
+                font-weight: 400;
+                font-family: "Josefin Sans", sans-serif;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+                width: 180px;
+                height: 50px;
+                font-family: "Josefin Sans", sans-serif;
+                color:$color-gold-main;
+                border: 2px solid $color-gold-main;
+                border-radius: 4px;
+                position: relative;
+                top: 20%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%,-50%);
+                &:hover{
+                    background-color: $color-gold-main;
+                    color: $color-black-pure;
+                }
+            }
+        }
+    }
+}
+// --------------------------------
+// about us
+    // mobile
+@include RSW($mobile-min,$mobile-max){
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        .aboutUs-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .title-about{
+                p{
+                    font-family: "Dancing Script", cursive;
+                    font-size: 40px;
+                    font-weight: 300;
+                    color: $color-gold-main;
+                    margin-bottom:10px;
+                }
+            }
+            .intro-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: $color-goldwhite;
+                    margin-bottom: 20px;
+                }
+            }
+            .info-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 16px;
+                    font-style: italic;
+                    color: $color-gray-main;
+                    margin-bottom: 14px;
+                    text-align: center;
+                    font-weight: 400;
+
+                }
+            }
+            .button-about{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    text-decoration: none;
+                    width: 100px;
+                    height: 30px;
+                    font-size: 14px;
+                    font-family: "Josefin Sans", sans-serif;
+                    color:$color-gold-main;
+                    border: 2px solid $color-gold-main;
+                    border-radius: 9px;
+                    position: relative;
+                    margin-top: 5px;
+                    top: 20%;
+                    left: 50%;
+                    right: 50%;
+                    transform: translate(-50%,-50%);
+                    &:hover{
+                        background-color: $color-gold-main;
+                        color: $color-black-pure;
+                    }
+                }
+            }
+        }
+    }
+}
+    // Tablets
+@include RSW($tablets-min,$tablets-max){
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        img{
+            width: 320px;
+            height: 320px;
+        }
+        .aboutUs-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.6rem;
+            .title-about{
+                p{
+                    font-family: "Dancing Script", cursive;
+                    font-size: 50px;
+                    font-weight: 500;
+                    color: $color-gold-main;
+                    margin-bottom:6px;
+                }
+            }
+            .intro-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 30px;
+                    font-weight: 300;
+                    color: $color-goldwhite;
+                    margin-bottom: 10px;
+                }
+            }
+            .info-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 15px;
+                    font-style: italic;
+                    color: $color-gray-main;
+                    margin-bottom: 14px;
+                    text-align: center;
+                    font-weight: 500;
+
+                }
+            }
+            .button-about{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    text-decoration: none;
+                    width: 150px;
+                    height: 40px;
+                    font-size: 14px;
+                    font-family: "Josefin Sans", sans-serif;
+                    color:$color-gold-main;
+                    border: 2px solid $color-gold-main;
+                    border-radius: 9px;
+                    position: relative;
+                    margin-top: 5px;
+                    top: 20%;
+                    left: 50%;
+                    right: 50%;
+                    transform: translate(-50%,-50%);
+                    &:hover{
+                        background-color: $color-gold-main;
+                        color: $color-black-pure;
+                    }
+                }
+            }
+        }
+    }
+}
+    // laptops
+@include RSW($laptops-min,$laptops-max){
+    .about-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        img{
+            width: 320px;
+            height: 320px;
+            
+            animation-name: animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            @keyframes animation {
+                from{
+                    transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    
+                }
+                to{
+                    transform: rotateX(10deg) rotateY(10deg) rotate(10deg);
+                }
+            }
+        }
+
+        .aboutUs-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            .title-about{
+                p{
+                    font-family: "Dancing Script", cursive;
+                    font-size: 90px;
+                    font-weight: 600;
+                    color: $color-gold-main;
+                    margin-bottom:6px;
+                }
+            }
+            .intro-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 40px;
+                    font-weight: 300;
+                    color: $color-goldwhite;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+            .info-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    color: $color-gray-main;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    font-weight: 500;
+                    padding-right: 10px;
+                    
+
+                }
+            }
+            .button-about{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    text-decoration: none;
+                    width: 160px;
+                    height: 45px;
+                    font-size: 17px;
+                    font-family: "Josefin Sans", sans-serif;
+                    font-weight: 300;
+                    color:$color-gold-main;
+                    border: 2px solid $color-gold-main;
+                    border-radius: 9px;
+                    position: relative;
+                    margin-top: 5px;
+                    top: 20%;
+                    left: 50%;
+                    right: 50%;
+                    transform: translate(-50%,-50%);
+                    &:hover{
+                        background-color: $color-gold-main;
+                        color: $color-black-pure;
+                    }
+                }
+            }
+        }
+    }
+}
+    // Desktops
+@include RSW($desktops-min,$desktops-max){
+    .about-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        img{
+            width: 350px;
+            height: 350px;
+            
+            animation-name: animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            @keyframes animation {
+                from{
+                    transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    
+                }
+                to{
+                    transform: rotateX(10deg) rotateY(10deg) rotate(10deg);
+                }
+            }
+        }
+
+        .aboutUs-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            .title-about{
+                p{
+                    font-family: "Dancing Script", cursive;
+                    font-size: 90px;
+                    font-weight: 600;
+                    color: $color-gold-main;
+                    margin-bottom:6px;
+                }
+            }
+            .intro-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 40px;
+                    font-weight: 300;
+                    color: $color-goldwhite;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+            .info-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    color: $color-gray-main;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    font-weight: 500;
+                    padding-right: 10px;
+                    
+
+                }
+            }
+            .button-about{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    text-decoration: none;
+                    width: 160px;
+                    height: 45px;
+                    font-size: 17px;
+                    font-family: "Josefin Sans", sans-serif;
+                    font-weight: 300;
+                    color:$color-gold-main;
+                    border: 2px solid $color-gold-main;
+                    border-radius: 9px;
+                    position: relative;
+                    margin-top: 5px;
+                    top: 20%;
+                    left: 50%;
+                    right: 50%;
+                    transform: translate(-50%,-50%);
+                    &:hover{
+                        background-color: $color-gold-main;
+                        color: $color-black-pure;
+                    }
+                }
+            }
+        }
+    }
+}
+    // Tv
+@include RSWTV($tv){
+    .about-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        img{
+            width: 550px;
+            height: 550px;
+            
+            animation-name: animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            @keyframes animation {
+                from{
+                    transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    
+                }
+                to{
+                    transform: rotateX(10deg) rotateY(10deg) rotate(10deg);
+                }
+            }
+        }
+
+        .aboutUs-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            .title-about{
+                p{
+                    font-family: "Dancing Script", cursive;
+                    font-size: 90px;
+                    font-weight: 600;
+                    color: $color-gold-main;
+                    margin-bottom:6px;
+                }
+            }
+            .intro-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 40px;
+                    font-weight: 300;
+                    color: $color-goldwhite;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+            .info-about{
+                p{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 1.9rem;
+                    font-style: italic;
+                    color: $color-gray-main;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    font-weight: 500;
+                    width: 39rem;
+                    position: relative;
+                    right: 10px;
+
+                }
+            }
+            .button-about{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    text-decoration: none;
+                    width: 170px;
+                    height: 50px;
+                    font-size: 17px;
+                    font-family: "Josefin Sans", sans-serif;
+                    font-weight: 300;
+                    color:$color-gold-main;
+                    border: 2px solid $color-gold-main;
+                    border-radius: 9px;
+                    position: relative;
+                    margin-top: 5px;
+                    top: 20%;
+                    left: 50%;
+                    right: 50%;
+                    transform: translate(-50%,-50%);
+                    &:hover{
+                        background-color: $color-gold-main;
+                        color: $color-black-pure;
+                    }
+                }
+            }
+        }
+    }
+}
+//  --------------------------------
+// Gallery
+    // mobile
+@include RSW($mobile-min,$mobile-max){
+    .gallery{
+        height: $gallery-height;
+        .gallery-title{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            background-color: $color-gold-main;
+            color: $back-dark;
+            font-weight: 700;
+            font-family: "Dancing Script", cursive;
+        }
+        .card{
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            &:hover .gallery-overlay{
+                left: 0;
+            }
+            .gallery-overlay{
+                background-color: $color-goldwhite;
+                opacity: 0.8;
+                position: absolute;
+                left: -100%;
+                transition: left 1s;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1rem;
+                p{
+                   font-size: 24px;
+                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                }
+                a{
+                    text-decoration: none;
+                    color: $back-dark;
+                    background-color: snow;
+                    padding: 1rem;
+                    border: 3px solid $color-gold-main;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    &:hover{
+                    
+                        opacity: 1;
+                        background-color: $color-gray-main;
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+    }
+}
+    // Tablets
+@include RSW($tablets-min,$tablets-max){
+    .gallery{
+        height: $gallery-height;
+        .gallery-title{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            background-color: $color-gold-main;
+            color: $back-dark;
+            font-weight: 700;
+            font-family: "Dancing Script", cursive;
+        }
+        .card{
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            &:hover .gallery-overlay{
+                left: 0;
+            }
+            .gallery-overlay{
+                background-color: $color-goldwhite;
+                opacity: 0.8;
+                position: absolute;
+                left: -100%;
+                transition: left 1s;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1rem;
+                p{
+                   font-size: 24px;
+                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                }
+                a{
+                    text-decoration: none;
+                    color: $back-dark;
+                    background-color: snow;
+                    padding: 1rem;
+                    border: 3px solid $color-gold-main;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    &:hover{
+                    
+                        opacity: 1;
+                        background-color: $color-gray-main;
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+    }
+}
+    // laptops
+@include RSW($laptops-min,$laptops-max){
+    .gallery{
+        height: $gallery-height;
+        .gallery-title{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            background-color: $color-gold-main;
+            color: $back-dark;
+            font-weight: 700;
+            font-family: "Dancing Script", cursive;
+        }
+        .gallery-card{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 1rem;
+            padding: 1rem;
+            background-color: $back-dark;
+        }
+        .card{
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            &:hover .gallery-overlay{
+                left: 0;
+            }
+            .gallery-overlay{
+                background-color: $color-goldwhite;
+                opacity: 0.8;
+                position: absolute;
+                left: -100%;
+                transition: left 1s;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1rem;
+                p{
+                   font-size: 24px;
+                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                }
+                a{
+                    text-decoration: none;
+                    color: $back-dark;
+                    background-color: snow;
+                    padding: 1rem;
+                    border: 3px solid $color-gold-main;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    &:hover{
+                    
+                        opacity: 1;
+                        background-color: $color-gray-main;
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        img{
+            width:100%;
+            height: 300px;
+            object-fit: cover;            
+        }
+
+    }
+}
+    // Desktops
+@include RSW($desktops-min,$desktops-max){
+    .gallery{
+        height: $gallery-height;
+        .gallery-title{
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            background-color: $color-gold-main;
+            color: $back-dark;
+            font-weight: 700;
+            text-shadow: 1px 1px 1px snow;
+            // -webkit-text-stroke: 0.6px $color-webkit1;
+            font-family: "Dancing Script", cursive;
+        }
+        .gallery-card{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            background-color: $back-dark;
+            padding: 1rem;
+            gap: 10px;
+        }
+        .card{
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 9px;
+
+            &:hover .gallery-overlay{
+                left: 0;
+            }
+            .gallery-overlay{
+                background-color: $color-goldwhite;
+                opacity: 0.8;
+                position: absolute;
+                left: -100%;
+                transition: left 1s;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1rem;
+                p{
+                   font-size: 24px;
+                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                }
+                a{
+                    text-decoration: none;
+                    color: $back-dark;
+                    background-color: snow;
+                    padding: 1rem;
+                    border: 3px solid $color-gold-main;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    &:hover{
+                    
+                        opacity: 1;
+                        background-color: $color-gray-main;
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        img{
+            width:100%;
+            height: 300px;
+            object-fit: cover;            
+        }
+
+    }
+}
+@include RSWTV($tv){
+    .gallery{
+        height: $gallery-height;
+        .gallery-title{
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            background-color: $color-gold-main;
+            color: $back-dark;
+            font-weight: 700;
+            text-shadow: 1px 1px 1px snow;
+            font-family: "Dancing Script", cursive;
+        }
+        .gallery-card{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            background-color: $back-dark;
+            padding: 1rem;
+            gap: 12px;
+        }
+        .card{
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 11px;
+
+            &:hover .gallery-overlay{
+                left: 0;
+            }
+            .gallery-overlay{
+                background-color: $color-goldwhite;
+                opacity: 0.8;
+                position: absolute;
+                left: -100%;
+                transition: left 1s;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1rem;
+                p{
+                   font-size: 24px;
+                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                }
+                a{
+                    text-decoration: none;
+                    color: $back-dark;
+                    background-color: snow;
+                    padding: 1rem;
+                    border: 3px solid $color-gold-main;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    &:hover{
+                    
+                        opacity: 1;
+                        background-color: $color-gray-main;
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        img{
+            width:100%;
+            height: 300px;
+            object-fit: cover;            
+        }
+
+    }
+}
+
+// --------------------------------
+// footer
+    // mobile
+@include RSW($mobile-min,$mobile-max){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $back-dark;
+        .brand{
+            display: flex;
+            flex-direction: column;
+            // gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        // logo and brand section
+        .logo-brand{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+          
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 60px;
+                width: 60px;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                margin-top: 10px;
+                i{
+                    font-size: 17px;
+                }
+            }
+        }
+        h1{
+            margin-top: 10px;
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            
+        }
+        p{
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 400;
+            text-align: center;
+
+        }
+        .social{
+            margin: 20px 0;
+
+            a{
+                text-decoration: none;
+                color:$color-gray-main;
+                padding:6px;
+                transition: color 1s;
+                &:hover{
+                    color:$color-gold-main;
+                }
+                i{
+                    font-size: 25px;
+                }
+            }
+        }
+        .copyright{
+            p{
+                font-size: 15px;
+                padding: 10px;
+            }
+        }
+    }
+}
+    // tablets
+@include RSW($tablets-min,$tablets-max){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $back-dark;
+        .brand{
+            display: flex;
+            flex-direction: column;
+            // gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        // logo and brand section
+        .logo-brand{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+          
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 60px;
+                width: 60px;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                margin-top: 10px;
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+        h1{
+            margin-top: 10px;
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            
+        }
+        p{
+            font-size: 30px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 400;
+            text-align: center;
+
+        }
+        .social{
+            margin: 20px 0;
+
+            a{
+                text-decoration: none;
+                color:$color-gray-main;
+                padding:6px;
+                transition: color 1s;
+                &:hover{
+                    color:$color-gold-main;
+                }
+                i{
+                    font-size: 35px;
+                }
+            }
+        }
+        .copyright{
+            p{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}
+    // laptops
+@include RSW($laptops-min,$laptops-max){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $footer-back-color;
+        .brand{
+            display: flex;
+            flex-direction: column;
+            // gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        // logo and brand section
+        .logo-brand{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+          
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 60px;
+                width: 60px;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                margin-top: 10px;
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+        h1{
+            margin-top: 10px;
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            
+        }
+        p{
+            font-size: 30px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 400;
+            text-align: center;
+
+        }
+        .social{
+            margin: 20px 0;
+
+            a{
+                text-decoration: none;
+                color:$color-gray-main;
+                padding:6px;
+                transition: color 1s;
+                &:hover{
+                    color:$color-gold-main;
+                }
+                i{
+                    font-size: 35px;
+                }
+            }
+        }
+        .copyright{
+            p{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}
+// desktops
+@include RSW($desktops-min,$desktops-max){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $footer-back-color;
+        .brand{
+            display: flex;
+            flex-direction: column;
+            // gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        // logo and brand section
+        .logo-brand{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+          
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 60px;
+                width: 60px;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                margin-top: 10px;
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+        h1{
+            margin-top: 10px;
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            
+        }
+        p{
+            font-size: 30px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 400;
+            text-align: center;
+
+        }
+        .social{
+            margin: 20px 0;
+
+            a{
+                text-decoration: none;
+                color:$color-gray-main;
+                padding:6px;
+                transition: color 1s;
+                &:hover{
+                    color:$color-gold-main;
+                }
+                i{
+                    font-size: 35px;
+                }
+            }
+        }
+        .copyright{
+            p{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}
+    // Tv
+@include RSWTV($tv){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $footer-back-color;
+        .brand{
+            display: flex;
+            flex-direction: column;
+            // gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        // logo and brand section
+        .logo-brand{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+          
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items:center;           
+                height: 60px;
+                width: 60px;
+                color: $color-gold-main;
+                text-decoration: none;
+                border: 5px solid $color-gold-main;
+                border-radius: 50%;
+                margin-top: 10px;
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+        h1{
+            margin-top: 10px;
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $color-gray-main;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            
+        }
+        p{
+            font-size: 30px;
+            letter-spacing: 2px;
+            text-align: center;
+            color:$color-gray-main;
+            font-weight: 400;
+            text-align: center;
+
+        }
+        .social{
+            margin: 20px 0;
+
+            a{
+                text-decoration: none;
+                color:$color-gray-main;
+                padding:6px;
+                transition: color 1s;
+                &:hover{
+                    color:$color-gold-main;
+                }
+                i{
+                    font-size: 35px;
+                }
+            }
+        }
+        .copyright{
+            p{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}
