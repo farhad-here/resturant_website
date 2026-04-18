@@ -1,8 +1,11 @@
 # 🥘It is a Responsive Resturant website(front-end) with animation
+✍️It is responsive for phone, tablet and ipad, laptop and desktop, Tv
 
-## It is responsive and i used sass and W3JS
+## 🎩information:
+- responsive✔️
+- sass✔️ 
+- W3JS✔️
 
-### ✍️It is responsive for phone, tablet and ipad, laptop and desktop, Tv
 
 ---
 
